@@ -1,0 +1,14 @@
+service: serverless-tictactoe
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  tictactoe:
+    handler: handler.tictactoe
+    events:
+      - http:
+          path: tictactoe
+          method: post
+          cors: true
