@@ -44,7 +44,7 @@ module.exports.tictactoe = (event, context, callback) => {
     }),
   };
 
-  var options = {
+  const options = {
     method: 'POST',
     url: 'https://ps.pndsn.com/publish/pub-c-048b1453-853a-4840-8cdf-13acbba2638a/sub-c-c9df3d40-7e16-11e8-aeff-b67b4c79ce4d/0/ch1/0',
     headers: { 'Content-Type': 'application/json' },
